@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="row p-5 bg-warning align-items-center justify-content-center">
+        <div class="col-6">
+            <p class="h3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum dicta laborum tempore quo doloribus reiciendis totam, magni iusto ut quos velit eaque, aut perferendis quae optio recusandae architecto tempora nemo?</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col mt-5" (click)="saludos()" *ngFor="let thumbnail of thumbnails">
+            <div class="img__box">
+                <div class="bg-img img" style="background-image: url(https://via.placeholder.com/365x200.png);">
+
+                </div>
+                <p class="img__texto d-flex justify-content-center align-items-center">
+                    {{ thumbnail.text }}
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
