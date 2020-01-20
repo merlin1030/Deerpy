@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 import { NavComponent } from './shareds/nav/nav.component';
 import { AboutComponent } from './components/about/about.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     NavComponent,
-    AboutComponent
+    AboutComponent,
+    FontAwesomeModule
   ],
   imports: [
     BrowserModule,
