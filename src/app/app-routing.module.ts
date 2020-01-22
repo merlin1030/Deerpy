@@ -4,9 +4,9 @@ import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './components/about/about.component';
 
 const routes: Routes = [
-  { path: 'home', component: HomeComponent  },
+  { path: 'home', component: HomeComponent, data: {animation: 'Home'} },
   { path: '',   redirectTo: 'home', pathMatch: 'full' },
-  { path: 'about', component: AboutComponent  },
+  { path: 'about', component: AboutComponent, data: {animation: 'About'} },
   // { path: '**', component: HomeComponent  }, para pagina error 404
 
 ];

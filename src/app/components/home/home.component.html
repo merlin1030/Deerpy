@@ -7,7 +7,7 @@
     <div class="row">
         <div class="col mt-5" (click)="saludos()" *ngFor="let thumbnail of thumbnails">
             <div class="img__box">
-                <div class="bg-img img" style="background-image: url(https://via.placeholder.com/365x200.png);">
+                <div class="bg-img img" [ngStyle]="{'background-image':'url('+thumbnail.img+')'}">
 
                 </div>
                 <p class="img__texto d-flex justify-content-center align-items-center">
